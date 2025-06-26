@@ -44,12 +44,14 @@ It is basically JS except with static type checking, so that our code does not r
 
 6. Type aliases are used in TS for creating user defined types, especially for objects 
     Syntax : 
-    ```type UserType = {
+    ```
+    type UserType = {
         param1 : [type]; 
         param2 : [type];
     }
     OR 
-    type Usertype = [type(s)]```
+    type Usertype = [type(s)]
+    ```
 Type aliases can also be used for renaming the existing types
 
 7. In aliased types, attributes can be set as read-only using the readonly keyword so that they cannot be changed by user. Also some attributes can be marked as optional by using '?' after the attributes.
@@ -65,9 +67,11 @@ Type aliases can also be used for renaming the existing types
 
 10. Interfaces in TS : They are like abstract classes which only contains variables as attributes along with declaration of methods which can work on the defined attributes. They are fully abstract,i.e., The functionality is only declared in them. It is similar to type aliases and so we can create a object of type of the defined interface and the defined methods are implemented inside that object. Or, we can use them inside a class using 'implements' keyword.
     Syntax :
-    ```interface Int1 {
+    ```
+    interface Int1 {
         param1 : [type1], param2 : [type2], method1 : () => [returnType]
-    }```
+    }
+    ```
 In interfaces, we can add more functionalities even after the declaration by declaring them again. The interface that was again declared will extend the previously defined functionalities. This is known as reopening of an interface.
 Also, we can decalre another interface which can extend the functionalities of the previously defined interface using the extend keyword.
 
